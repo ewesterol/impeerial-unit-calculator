@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    height: 90vh;
+    width: 100%;
+    background-color: #dddcdc;
+}
+
+.top-header{
+    background-color: #6943FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+    padding: 20px;
+   
+}
+#title{
+    color: white;
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+#input-btn{
+    padding: 6px 10px;
+    height: 8vh;
+    width: 8vw;
+    background-color: #6943FF;
+    color: white;
+    border: 2px solid white;
+    font-size: 15px;
+    font-weight: 800;
+    text-align: center;
+    outline: none;
+    margin-bottom: 10px;
+}
+#convert-btn{
+    padding: 8px 16px;
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.bottom{
+    padding: 30px 40px;
+   
+    height: 100%;
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 5px;
+}
+.input{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.input-error{
+    color: red;
+    font-size: large;
+    font-weight: 500;
+}
+.result{
+    color: green;
+    padding: 20px;
+    background-color: white;
+}
+#input-error{
+    color: red;
+    font-size: large;
+    font-weight: 500;
+}
