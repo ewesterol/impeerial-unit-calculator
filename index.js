@@ -6,10 +6,12 @@ const meterToFeet = 3.281;
 const kiloToPounds = 2.204;
 const literToGallon = 0.264;
 convert.addEventListener("click", () => {
+   
     if (inputBtn.value === "" || isNaN(inputBtn.value) || inputBtn.value <= 0) {
        document.getElementById("input-error").innerHTML= "invalid entry. Please enter a valid number"
     } else {
         document.getElementById("input-error").innerHTML = "";
+        animatePress();
         lengthCalc();
         volumeCalc();
         massCalc();
@@ -34,4 +36,10 @@ function massCalc() {
   )} pounds | ${baseMass} pounds = ${(baseMass / kiloToPounds).toFixed(
     2
   )} kilos`;
+}
+function animatePress(){
+     convert.classList.add("convert-click");
+    setTimeout( ()=> {
+        convert.classList.remove("convert-click")
+    }, 100)
 }
